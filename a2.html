@@ -1,0 +1,34 @@
+<html>
+    <body>
+
+        <p id="i1"></p>
+
+        <script>
+
+            try {
+            f1(); //Error
+            }
+
+            catch(e) {
+            document.write(e+"<br><br>");
+            document.write("Hello Everyone"+"<br><br>");
+            }
+
+            document.write("Hello Everyone"+"<br><br>");
+
+            function fun(a,b) {
+                var x=a*b;
+                return x;
+            }
+
+            //arrow function
+
+            document.write(fun(4,7)+"<br>");
+            
+            mul=(n1,n2)=>n1*n2;
+            document.write(mul(4,7)+"<br>");
+
+        </script>
+
+    </body>
+</html>
