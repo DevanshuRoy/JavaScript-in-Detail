@@ -1,0 +1,27 @@
+<html>
+    <body>
+
+        <script>
+            try {
+
+                function addNumbers(a, b) {
+                    // Intentional error
+                    return a + b + undefinedVariable;
+                }
+
+                function printSum() {
+                    let result = addNumbers(10, 20);
+                    console.log("The sum is: " + result);
+                }
+
+                printSum();
+                
+            }
+
+            catch(e) {
+                document.write("Error: " + e);
+            }
+        </script>
+
+    </body>
+</html>
